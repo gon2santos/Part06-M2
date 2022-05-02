@@ -9,7 +9,14 @@ var traverseDomAndCollectElements = function(matchFunc, startEl) {
   // usa matchFunc para identificar elementos que matchien
 
   // TU CÓDIGO AQUÍ
-  
+  var result = matchFunc(startEl);
+  if(result) resultSet.push(startEl);
+
+  for(const child of startEl.children){
+    resultSet = resultSet.concat(traverseDomAndCollectElements(matchFunc, child));
+  }
+
+  return resultSet;
 };
 
 // Detecta y devuelve el tipo de selector
@@ -37,13 +44,14 @@ var matchFunctionMaker = function(selector) {
   var selectorType = selectorTypeMatcher(selector);
   var matchFunction;
   if (selectorType === "id") { 
-   
+   matchFunction = (element) => `#${element.id}` === selector;
   } else if (selectorType === "class") {
-    
+    matchFunction = (element) => element.classList.contains(selector.slice(1));
   } else if (selectorType === "tag.class") {
-    
+    const [tagName, className] = selector.split('.');
+    matchFunction = (element) => (element.tagName.toLowerCase() === tagName.toLowerCase()) && (element.classList.contains(className));
   } else if (selectorType === "tag") {
-    
+    matchFunction = (element) => element.tagName === selector.toUpperCase();
   }
   return matchFunction;
 };
