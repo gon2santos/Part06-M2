@@ -745,7 +745,7 @@ Cuando un Componente es agregado al DOM decimos que fue Montado (mounted) y cuan
 * Crear listeners si son necesarios.
 * Remover listeners que ya no sirven más.
 
-Para poder hacer uso de estos Eventos, React nos da una serie de método que son invocados según el momento del ciclo de vida del Componente. Dentro de estos métodos nosotros vamos a agregar la funcionalidad que necesitamos para nuestro Componente.
+Para poder hacer uso de estos Eventos, React nos da una serie de métodos que son invocados según el momento del ciclo de vida del Componente. Dentro de estos métodos nosotros vamos a agregar la funcionalidad que necesitamos para nuestro Componente.
 
 ###### Establecer props por defecto
 
