@@ -6,3 +6,8 @@
   display: flex;
   justify-content: center;
 }
+
+#Henry_logo {
+  height: 40px;
+  object-fit: contain;
+}
