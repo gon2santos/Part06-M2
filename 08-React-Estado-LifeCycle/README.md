@@ -737,7 +737,7 @@ Veamos algunos de estos eventos, primero los vamos a separa en dos categorias qu
 
 #### Montando / Desmontado
 
-Cuando un Componente es agregado al DOM decime que fue Montado (mounted) y cuando es removido del DOM decimos que fue Desmontado (unmounted). Por definición estos eventos son llamados por React _solo_ una vez en el ciclo de vida del Componente ( cuando 'nace' y cuando 'muere'). Por lo tanto nos van a servir para setear ciertas condiciones iniciales de un Compoente o bien, cerrar o eliminar ciertos listeners que sólo le servían al Componente en cuestión, en general la mayoría de las veces haremos lo siguiente en estos Eventos:
+Cuando un Componente es agregado al DOM decimos que fue Montado (mounted) y cuando es removido del DOM decimos que fue Desmontado (unmounted). Por definición estos eventos son llamados por React _solo_ una vez en el ciclo de vida del Componente ( cuando 'nace' y cuando 'muere'). Por lo tanto nos van a servir para setear ciertas condiciones iniciales de un Compoente o bien, cerrar o eliminar ciertos listeners que sólo le servían al Componente en cuestión, en general la mayoría de las veces haremos lo siguiente en estos Eventos:
 
 * Establecer algunas _props_ por defecto.
 * Establecer algunos Estados iniciales del Componente.
@@ -745,7 +745,7 @@ Cuando un Componente es agregado al DOM decime que fue Montado (mounted) y cuand
 * Crear listeners si son necesarios.
 * Remover listeners que ya no sirven más.
 
-Para poder hacer uso de estos Eventos, React nos da una serie de método que son invocados según el momento del ciclo de vida del Componente. Dentro de estos métodos nosotros vamos a agregar la funcionalidad que necesitamos para nuestro Componente.
+Para poder hacer uso de estos Eventos, React nos da una serie de métodos que son invocados según el momento del ciclo de vida del Componente. Dentro de estos métodos nosotros vamos a agregar la funcionalidad que necesitamos para nuestro Componente.
 
 ###### Establecer props por defecto
 

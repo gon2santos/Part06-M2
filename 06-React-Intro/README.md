@@ -538,7 +538,7 @@ const nombreVariable = 'Toni';
 ReactDOM.render(<HelloWorldFunction name={nombreVariable} />, document.getElementById('app'));
 ```
 
-Ahora tenemos un Componente que nos sirve para saludar! Sólo tenemos que pasarle una _prop_ con el nombre de a quien va dirigido el saludo. :unamused:  Es un ejemplo simple, pero mostramos la forma de React de pasar _props_ a sus Componentes.
+Ahora tenemos un Componente que nos sirve para saludar! Sólo tenemos que pasarle una _prop_ con el nombre de a quien va dirigido el saludo.  Es un ejemplo simple, pero mostramos la forma de React de pasar _props_ a sus Componentes.
 Aca vemos una de las diferencias entre un componente de clases y un componente de funciones. El uso de la palabra reservada 'this', esto nos hace mas facilita a la hora de hacer un debugging, no pensar a que hace referencia 'this' siempre es un plus. Ademas,  no usar 'this' significa que no es necesario el uso de bindear los eventos para hacer referencia a eventos dentro de una clase.
 
 > Mirá como quedaría este código traducido a JavaScript plano [acá](http://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=react%2Cstage-2&targets=&browsers=&builtIns=false&debug=false&experimental=false&loose=false&spec=false&code_lz=JYWwDg9gTgLgBAJQKYEMDG8BmUIjgcilQ3wG4AoUSWRYmAEQHkBZObXAo9GAWgBNcZcmgA2KAM7i4ACSQiREAOrQRfOEgAeMJADs-U5NwB0AYVyQdu-AG9ycOET1IoACgCUt-_aIwArlB04FzsvewAePmAANwA-END7aQgxABo4axgAC2BxIzAcMFydFBAkAF8AQgr4rzCAekjYmrcQsvIyimEIHXF4HVwAIyIANRQoYBQBkSQ4AF4CABVu4CFyQwwmZiNHPmcXMNl5JRU1YtLZ636QIaRR8cnpsrg6mLSBNF9SnRgjAHMkGAAUWmXxgACEAJ4AST4LnwKDAYHwbjcpCAA&playground=true).
