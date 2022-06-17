@@ -4,9 +4,7 @@ import Form from './Form.jsx';
 
 function App() {
   return (
-    <Form>
-      
-      </Form>
+    <Form />
   );
 }
 
