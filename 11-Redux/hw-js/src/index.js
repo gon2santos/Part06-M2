@@ -1,6 +1,6 @@
 const { createStore } = require('redux');
 const contador = require('./reducer');
-const { incremento, decremento } = require('./actions');
+const { incremento, decremento, IncrementoImpar } = require('./actions');
 const { INCREMENTO } = require('./action-types');
 
 // En esta linea creamos nuestro store. Pasandole como parametro nuestro Reducer
@@ -30,8 +30,9 @@ store.subscribe(renderContador);
 // Por ultimo, utilizamos los botones de nuestro HTML para que cada vez que hagamos click,
 // hagan un dispatch al store de la accion correspondiente:
 
-var btnInc = document.getElementById('incremento');
-var btnDec = document.getElementById('decremento');
+/* var btnInc = document.getElementById('incremento');
+var btnDec = document.getElementById('decremento'); */
 
-btnInc.onclick = () => store.dispatch(incremento());
-btnDec.onclick = () => store.dispatch(decremento());
+Incremento.onclick = () => store.dispatch(incremento());
+Decremento.onclick = () => store.dispatch(decremento());
+incrementoImpar.onclick = () => store.dispatch(IncrementoImpar());
